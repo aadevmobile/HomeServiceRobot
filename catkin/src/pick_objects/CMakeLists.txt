@@ -11,6 +11,7 @@ find_package(catkin REQUIRED COMPONENTS
   actionlib
   move_base_msgs
   roscpp
+  add_markers
 )
 
 ## System dependencies are found with CMake's conventions
@@ -151,8 +152,11 @@ include_directories(
 # )
 
 add_executable(pick_objects src/pick_objects.cpp)
-add_dependencies(pick_objects pick_objects_generate_messages_cpp)
 target_link_libraries(pick_objects ${catkin_LIBRARIES})
+#add_dependencies(pick_objects pick_objects_generate_messages_cpp)
+
+#test
+add_dependencies(pick_objects ${pick_objects_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 
 #############
 ## Install ##
