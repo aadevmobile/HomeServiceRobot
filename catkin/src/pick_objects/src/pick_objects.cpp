@@ -32,8 +32,8 @@ int main(int argc, char** argv){
   pickUp.target_pose.pose.position.y = 5;
   pickUp.target_pose.pose.orientation.w = 1.0;
 
-  dropOff.target_pose.pose.position.x = -1.6;  
-  dropOff.target_pose.pose.position.y = -0.6;
+  dropOff.target_pose.pose.position.x = -1.9;  
+  dropOff.target_pose.pose.position.y = 1.29;
   dropOff.target_pose.pose.orientation.w = 1.57;
   
   
@@ -70,7 +70,7 @@ int main(int argc, char** argv){
 	return 0;
      }
   }else
-    ROS_INFO("The base failed to move forward 1 meter for some reason");
+    ROS_INFO("PickUp Failed :/");
 
   return 0;
 }
