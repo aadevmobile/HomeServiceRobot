@@ -1,6 +1,6 @@
-#include <ros/ros.h>
+/*#include <ros/ros.h>
 #include <visualization_msgs/Marker.h>
-#include "add_markers/setupMarker.h"
+//#include "add_markers/setupMarker.h"
 
 ros::Publisher marker_pub;
 ros::ServiceServer marker_srv;
@@ -91,4 +91,4 @@ int main(int argc, char** argv)
     // Handle ROS communication events
     ros:: spin();
     return 0;
-} 
+} */
